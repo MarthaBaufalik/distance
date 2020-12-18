@@ -515,6 +515,7 @@ body {
   padding: 9px 16px 9px 16px;
 }
 .fanpage-header-title {
+  margin: 0;
   font-size: 14px;
   line-height: 22px;
   font-weight: 600;
@@ -584,6 +585,59 @@ body {
 .fanpage-info-counter.active {
   display: inline;
 }
+.fanpage-radio-buttons {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 17px;
+}
+.fanpage-radio-buttons-item {
+  width: 100%;
+}
+.fanpage-radio-buttons input[type="radio"] {
+  display: none;
+}
+.fanpage-radio-buttons label {
+  display: flex;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid #d9d9d9;
+  border-right: none;
+  user-select: none;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  justify-content: center;
+  color: #595959;
+}
+.fanpage-radio-buttons .fanpage-radio-buttons-item:first-child label {
+  border-radius: 4px 0 0 4px;
+}
+.fanpage-radio-buttons .fanpage-radio-buttons-item:last-child label {
+  border-radius: 0 4px 4px 0;
+  border-right: 1px solid #d9d9d9;
+}
+.fanpage-radio-buttons input[type="radio"]:checked + label {
+  border: 1px solid #1890ff;
+  color: #1890ff;
+}
+.fanpage-footer-info {
+  padding: 16px 0;
+  text-align: center;
+}
+.fanpage-footer-info-counter {
+  margin: 0;
+  margin-top: 4px;
+  font-size: 24px;
+  line-height: 32px;
+  color: #262626;
+}
+.fanpage-footer-info-middle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8c8c8c;
+}
+
 @media (max-width: 1250px) {
   .header-block {
     width: 95%;
