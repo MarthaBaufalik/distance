@@ -109,6 +109,12 @@ body {
 .header-icon {
   fill: #002766;
 }
+.icon-link:last-child .header-icon:last-child {
+  margin-left: 8px;
+}
+.icon-link:last-child:hover .header-icon {
+  fill: #fff;
+}
 .header-icon:hover {
   fill: #fff;
 }
@@ -151,6 +157,9 @@ body {
   margin-top: 12px;
   margin-bottom: 24px;
 }
+.nav-icon {
+  fill: #bfbfbf;
+}
 .nav-text {
   margin-left: 8px;
 }
@@ -166,11 +175,23 @@ body {
   font-weight: normal;
 }
 .nav-link.active {
-  background: #ffffff;
   color: #262626;
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
+  background: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link-text {
+  display: flex;
+  align-items: center;
+}
+.nav-link-button {
+  display: none;
+}
+.nav-link.active .nav-link-button {
+  display: contents;
 }
 .nav-group:last-of-type .nav-link:last-child {
   margin-top: 12px;
@@ -478,6 +499,7 @@ body {
 }
 .stories-footer-icon {
   margin-right: 12px;
+  fill: #bfbfbf;
 }
 .birthday {
   background: #ffffff;
