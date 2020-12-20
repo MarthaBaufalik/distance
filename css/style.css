@@ -659,6 +659,42 @@ body {
   line-height: 22px;
   color: #8c8c8c;
 }
+/*всплывающие подсказки и меню*/
+.tooltip {
+  position: relative;
+  display: flex;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 63px;
+  height: 32px;
+  background-color: black;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -30px;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 @media (max-width: 1250px) {
   .header-block {
